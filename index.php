@@ -9,7 +9,7 @@
     <img src='./images/bc_logo_text.png' style='position:fixed; top:50px; left:100px;' width='300px' height='100px' alt='bc_logo_text' />
 
     <div id="menu" class="sidemenu">
-        <a href="homepage.html">HOME</a></li><br><br>
+        <a href="index.php">HOME</a></li><br><br>
         <a href="explore.html">EXPLORE</a></li><br><br>
         <a href="rewards.html">REWARDS</a></li><br><br>
         <a href="about.html">ABOUT</a></li><br><br>
