@@ -31,7 +31,6 @@
             <div class="img-container">
                 <img src="./images/slider-image4.png"/>
             </div>
-
         </div>
     </div>
 
