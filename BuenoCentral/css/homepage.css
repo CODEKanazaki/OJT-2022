@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'General Sans', sans-serif;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+button{
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 8px 8px 8px 8px;
+    border: 2px solid #AEFF00;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+.sidemenu{
+    position: fixed;
+    top: 100px;
+    left:100px;
+    height: 100%;
+    width: 300px;
+    background-color: transparent;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+.sidemenu a{
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #8F8F8F;
+    display: block;
+}
+
+.sidemenu a:hover{
+    color:white;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 700px;
+    border-radius: 3%;
+    width: 1200px;
+    margin-left:500px;
+    margin-top:50px;
+}
+
+/* Slide Animation */
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+}
+
+.slide-images{
+    width: 3600px;
+    height: 600px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}

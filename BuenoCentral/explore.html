@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3f713e3efd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rewards</title>
+  </head>
+  <body>
+    <div id="announcement">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <header>
+      <img src="images/bc_logo_text.png" alt="Logo" />
+      <button id="navicon" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+      <div id="navmenu1" class="navmenu hide">
+        <a href="/homepage.html">Home</a>
+        <a href="/explore.html" class="active">Explore</a>
+        <a href="/rewards.html">Rewards</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </header>
+    <div class="container">
+      <h1>REDEEMABLE PRODUCTS</h1>
+      <div class="container w-100">
+        <img class="w-20" src="" alt="Product" />
+        <img class="w-20" src="" alt="Product" />
+        <img class="w-20" src="" alt="Product" />
+        <img class="w-20" src="" alt="Product" />
+      </div>
+    </div>
+    <div class="container" style="flex-direction: column; text-align: left">
+      <p>
+        *The products shown are currently the available redeemable products.
+      </p>
+      <p>** Products shown above will change without prior notice.</p>
+    </div>
+    <div class="container"><a href="/" class="btn-green w-20">FAQ'S</a></div>
+
+    <footer>
+      <div>
+        <p>© 2022 Bueno Central</p>
+        <p>Privacy Policy</p>
+      </div>
+    </footer>
+    <script>
+      const openNav = () => {
+        var x = document.getElementById("navmenu1");
+        if (x.className === "navmenu") {
+          x.className += " hide";
+        } else {
+          x.className = "navmenu";
+        }
+      };
+    </script>
+  </body>
+</html>

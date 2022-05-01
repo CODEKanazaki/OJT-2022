@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3f713e3efd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rewards</title>
+  </head>
+  <body>
+    <div id="announcement">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <header>
+      <img src="images/bc_logo_text.png" alt="Logo" />
+      <button id="navicon" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+      <div id="navmenu1" class="navmenu hide">
+        <a href="/homepage.html">Home</a>
+        <a href="/explore.html">Explore</a>
+        <a href="/rewards.html" class="active">Rewards</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </header>
+    <div class="container items-center">
+      <div class="content">
+        <h1 id="content-title">REWARDS PLUS</h1>
+        <div class="rewards-card">
+          <img id="card-1" src="images/rewards card.png" alt="Rewards Card" />
+          <img id="card-2" src="images/rewards card.png" alt="Rewards Card" />
+          <img id="card-3" src="images/rewards card.png" alt="Rewards Card" />
+        </div>
+      </div>
+      <div class="content">
+        <p id="content-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="rewards-btn">
+          <a href="/" class="btn-green">Become a Member</a>
+          <a href="/" class="btn-blue">Inquire</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <p>© 2022 Bueno Central</p>
+        <p>Privacy Policy</p>
+      </div>
+    </footer>
+    <script>
+      const openNav = () => {
+        var x = document.getElementById("navmenu1");
+        if (x.className === "navmenu") {
+          x.className += " hide";
+        } else {
+          x.className = "navmenu";
+        }
+      };
+    </script>
+  </body>
+</html>

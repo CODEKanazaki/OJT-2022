@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3f713e3efd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rewards</title>
+  </head>
+  <body>
+    <div id="announcement">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <header>
+      <img src="images/bc_logo_text.png" alt="Logo" />
+      <button id="navicon" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+      <div id="navmenu1" class="navmenu hide">
+        <a href="/homepage.html">Home</a>
+        <a href="/explore.html">Explore</a>
+        <a href="/rewards.html">Rewards</a>
+        <a href="/about.html" class="active">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </header>
+    <div class="container"><img src="" alt="About" /></div>
+    <div class="container">
+      <div class="content c-3">
+        <h2>Mission</h2>
+        <p id="content-description">
+          To keep its employees provided, satisfied and professionaly trained.
+        </p>
+        <p id="content-description">
+          To be the top customers’ choice when it comes to basic commodities.
+        </p>
+      </div>
+      <div class="content c-3">
+        <h2>Vision</h2>
+        <p id="content-description">
+          To provide easy transactions by keeping up with the modernizations in
+          productivity and technology.
+        </p>
+        <p id="content-description">
+          To aid the efforts pertaining to waste management and observations to
+          global climate change.
+        </p>
+      </div>
+      <div class="content c-3">
+        <h2>Goal</h2>
+        <p id="content-description">
+          To provide assistance to the government’s effort in combating COVID-19
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <p>© 2022 Bueno Central</p>
+        <p>Privacy Policy</p>
+      </div>
+    </footer>
+    <script>
+      const openNav = () => {
+        var x = document.getElementById("navmenu1");
+        if (x.className === "navmenu") {
+          x.className += " hide";
+        } else {
+          x.className = "navmenu";
+        }
+      };
+    </script>
+  </body>
+</html>

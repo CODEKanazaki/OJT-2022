@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "GeneralSans-Regular";
+  src: url("../fonts/GeneralSans-Regular.woff2") format("woff2"),
+    url("../fonts/GeneralSans-Regular.woff") format("woff"),
+    url("../fonts/GeneralSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans-Bold";
+  src: url("../fonts/GeneralSans-Bold.woff2") format("woff2"),
+    url("../fonts/GeneralSans-Bold.woff") format("woff"),
+    url("../fonts/GeneralSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "GeneralSans-Regular", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5em 0.5em;
+  img {
+    width: 10vw;
+    min-width: 130px;
+  }
+  a {
+    margin: 0 1vw;
+    text-decoration: none;
+    color: #868686;
+    font-size: 1rem;
+    transition: 0.5s;
+    &:hover {
+      color: white;
+      border-bottom: 1px solid white;
+    }
+  }
+  .active {
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: "GeneralSans-Bold", sans-serif;
+  }
+  .navmenu {
+    width: 100vw;
+    padding: 0.3rem;
+    background-color: #063685;
+  }
+  #navicon {
+    padding: 0.5rem;
+    background-color: rgba($color: white, $alpha: 0);
+    border: none;
+    color: white;
+    font-size: 1em;
+  }
+}
+
+body {
+  background-image: url("../images/page_background.jpg");
+  min-height: 100vh;
+  position: relative;
+  color: white;
+}
+
+footer {
+  background-color: #868686;
+  position: absolute;
+  bottom: 0;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  div {
+    display: flex;
+    p {
+      margin-left: 1em;
+    }
+  }
+}
+
+#announcement {
+  background-color: #063685;
+  text-align: center;
+  font-size: smaller;
+  padding: 0.2em 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  .content {
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    width: 94vw;
+    text-align: center;
+    #content-title {
+      color: blue;
+      -webkit-text-stroke: 1px white;
+      margin-bottom: 1rem;
+      font-family: "GeneralSans-Bold", sans-serif;
+    }
+    #content-description {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.btn-green {
+  padding: 0.5em 1em;
+  margin: 0.5em 1em;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "GeneralSans-Bold", sans-serif;
+  transition: 0.5s;
+  border: 1px solid #0539ff;
+  color: #aeff00;
+  &:hover {
+    background-color: #aeff00;
+    color: #0539ff;
+  }
+}
+
+.btn-blue {
+  @extend .btn-green;
+  border: 1px solid #aeff00;
+  color: #0539ff;
+  &:hover {
+    background-color: #0539ff;
+    color: #aeff00;
+  }
+}
+
+// Rewards Page
+.rewards-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 40%;
+    border-radius: 20px;
+    border: 2px solid white;
+  }
+  #card-1 {
+    margin: 15% -30% 0 0;
+    z-index: 1;
+  }
+  #card-3 {
+    margin: -15% 0 0 -30%;
+    z-index: -1;
+  }
+}
+.rewards-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    width: 60%;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1280px;
+    margin: auto;
+    .content {
+      width: 45%;
+      margin: 2rem 0;
+      #content-title {
+        font-size: 2.5em;
+      }
+    }
+    .c-3 {
+      width: 30%;
+    }
+  }
+  .rewards-btn {
+    flex-direction: row;
+  }
+  header {
+    padding: 2em 0;
+    justify-content: space-around;
+    .navmenu {
+      width: auto;
+      display: block;
+      background-color: rgba($color: #000000, $alpha: 0);
+    }
+    a {
+      font-size: 1.4rem;
+    }
+    #navicon {
+      display: none;
+    }
+  }
+}
