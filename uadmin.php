@@ -65,7 +65,7 @@
 
 
         <div class="line">
-            <img src="./images/Or.PNG">
+            <img src="./images/vertical.PNG">
         </div>
 
 
