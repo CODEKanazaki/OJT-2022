@@ -15,26 +15,48 @@
   }
 
 
-header {
-padding: 8px;
+/* header {
+padding: 6px;
 text-align: center;
 background: rgb(15, 15, 104);
 color: white;
-font-size: 8px;
+font-size: 6px;
 }
-  
+   */
+
+.navitem {
+  font-family: "GeneralSans-Bold", sans-serif;
+}
+
+.navitem:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
 
 .box1{
-  border: 1px solid;
-  width: 250px;
+  /* border: 1px solid; */
+  width: 300px;
   height: 300px;
   font-size: 10px;
-
-  margin-top: 250px;
+  color:blue;
+  margin-top: 150px;
   margin-left: 110px;
   
 
 }
+
+.line{
+    margin-top: -260px;
+    margin-left: 410px;
+}
+
+
+button:hover {
+    opacity: 0.8;
+  }
+  
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -44,38 +66,78 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
   }
 
-button {
+button {        /*Login*/
 background-color: #04AA6D;
 color: white;
-padding: 14px 20px;
+padding: 16px 20px;
 margin: 8px 0;
 border: none;
 cursor: pointer;
 width: 100%;
+border-radius: 4px;
 }
   
+#forgotpass {
+    float: right;
+}
+
 .box2{
-    border: 5px solid;
+    /* border: 5px solid;
+    background-color: aqua;
+     */
     width: 250px;
     height: 250px;
     font-size: 10px;
-    background-color: aqua;
-    
-    margin-top: -220px;
-    margin-left: 370px;
+    margin-top: -240px;
+    margin-left: 500px;
   }
+
+  input,
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+
+
 
 body {
     font-family: "GeneralSans-Regular";
     margin: 0;
-    
+    background: rgb(255, 255, 255);
+    /* background-color: gray; */
   }
   
 .content {
-max-width: 500px;
-margin: auto;
+max-width: 800px;
+max-height: 800px;
+margin-top: -50px;
+margin-left: 700px;
 background: white;
-padding: 10px;
+
 }
 
 
@@ -85,4 +147,7 @@ padding: 10px;
     width: 100vw;
   }
 
-  
+
+footer {
+  background-color: rgba(1,1,1,0);
+}
