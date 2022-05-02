@@ -324,6 +324,10 @@ footer div a:hover {
   margin: 0 0 2rem 0;
 }
 
+.explore-brands {
+  margin: 1rem 1rem;
+}
+
 .hide {
   display: none;
 }
