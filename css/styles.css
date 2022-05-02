@@ -104,6 +104,17 @@ footer div p {
   margin-left: 1em;
 }
 
+footer div a {
+  margin-left: 1em;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer div a:hover {
+  color: #063685;
+}
+
 #announcement {
   background-color: #063685;
   text-align: center;
@@ -294,6 +305,23 @@ footer div p {
   background-color: white;
   padding: 1rem 1rem;
   color: #000000;
+}
+
+#privacy-div {
+  text-align: left;
+  width: 100%;
+}
+
+#privacy-div .privacy-space {
+  margin: 0 0 0.5rem 0;
+}
+
+#privacy-div .privacy-space1 {
+  margin: 0 0 1rem 0;
+}
+
+#privacy-div .privacy-space2 {
+  margin: 0 0 2rem 0;
 }
 
 .hide {
