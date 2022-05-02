@@ -75,7 +75,7 @@ header #navicon {
 }
 
 body {
-  background-image: url("../images/page_background.jpg");
+  background: url("../images/page_background.jpg") no-repeat center center fixed;
   color: white;
   padding-bottom: 3rem;
   background-size: cover;

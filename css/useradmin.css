@@ -14,6 +14,7 @@
     font-style: normal;
   }
 
+
 body {
   font-family: "GeneralSans-Regular";
   margin: 0;
@@ -23,13 +24,21 @@ body {
 header {
   padding: 8px;
   text-align: center;
-  background: blue;
+  background: rgb(15, 15, 104);
   color: white;
   font-size: 8px;
 }
 
+w3-container {
+    margin: auto 500 500 500; /*  up right down left */
+}
+
+
+
 img {
     position: fixed;
-    bottom: 0;    
+    bottom: 0;
     width: 100vw;
   }
+
+  

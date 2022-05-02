@@ -9,6 +9,9 @@
         <header>
             <h2>Annoucement long sentence. The quick brown fox jumps over the laze dog.</h2>
         </header>
+        
+        
+        
         <footer> 
         <img src="../images/wave.svg">
         </footer>
